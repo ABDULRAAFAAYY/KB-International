@@ -55,7 +55,7 @@ const vehicles = [
     price: 28500,
     mileage: '45,000 km',
     transmission: 'Automatic',
-    image: 'images/Japan/Toyota/landcruiser/landcruiser.jpg',
+    image: 'images/Japan/Toyota/Landcruiser/landcruiser.jpg',
     thumbnails: [
       'images/Japan/Toyota/Landcruiser/landcruiser.jpg',
       'images/Japan/Toyota/Landcruiser/landcruiser-1.jpg',
