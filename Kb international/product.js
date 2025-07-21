@@ -91,7 +91,7 @@ const vehicles = [
   price: 42000,
   mileage: '18,000 km',
   transmission: 'Automatic',
-  image: 'images/Germany/Mercedes-Benz/C-Class/C-Class-1.jpg',
+  image: 'images/Germany/Mercedez-Benz/C-Class/C-Class-1.jpg',
   thumbnails: [
     'images/Germany/Mercedez-Benz/C-Class/C-Class-1.jpg',
     'images/Germany/Mercedez-Benz/C-Class/C-Class-2.jpg',
@@ -109,7 +109,7 @@ const vehicles = [
   price: 450000,
   mileage: '9,000 km',
   transmission: 'Automatic',
-  image: 'images/UK/Rolls-Royce/Phantom/Phantom-1.jpg',
+  image: 'images/England/Rolls-Royce/Phantom/Phantom-1.jpg',
   thumbnails: [
     'images/England/Rolls-Royce/Phantom/Phantom-1.jpg',
     'images/England/Rolls-Royce/Phantom/Phantom-2.jpg',
