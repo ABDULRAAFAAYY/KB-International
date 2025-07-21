@@ -57,10 +57,10 @@ const vehicles = [
     transmission: 'Automatic',
     image: 'images/Japan/Toyota/landcruiser/landcruiser.jpg',
     thumbnails: [
-      'images/Japan/Toyota/landcruiser/landcruiser.jpg',
-      'images/Japan/Toyota/landcruiser/landcruiser-1.jpg',
-      'images/Japan/Toyota/landcruiser/landcruiser-2.jpg',
-      'images/Japan/Toyota/landcruiser/landcruiser-3.jpg'
+      'images/Japan/Toyota/Landcruiser/landcruiser.jpg',
+      'images/Japan/Toyota/Landcruiser/landcruiser-1.jpg',
+      'images/Japan/Toyota/Landcruiser/landcruiser-2.jpg',
+      'images/Japan/Toyota/Landcruiser/landcruiser-3.jpg'
     ],
     related: [2, 3, 4,5] // Nissan Skyline, Toyota Prius, Honda CR-V
   },
@@ -98,7 +98,7 @@ const vehicles = [
     'images/Germany/Mercedez-Benz/C-Class/C-Class-3.jpg',
     'images/Germany/Mercedez-Benz/C-Class/C-Class-4.jpg'
   ],
-    related: [1,3, 4, 5]
+    related: [1,3, 2, 7]
 },
 {
   id: 4,
@@ -116,7 +116,7 @@ const vehicles = [
     'images/England/Rolls-Royce/Phantom/Phantom-3.jpg',
     'images/England/Rolls-Royce/Phantom/Phantom-4.jpg'
   ],
-    related: [1,3, 4, 5]
+    related: [8,2, 4, 6]
 },
 {
   id: 5,
@@ -134,7 +134,7 @@ const vehicles = [
     'images/France/Peugeot/2008/2008-3.jpg',
     'images/France/Peugeot/2008/2008-4.jpg'
   ],
-    related: [1,3, 4, 5]
+    related: [6,3, 2, 7]
 },
 {
   id: 6,
@@ -170,7 +170,7 @@ const vehicles = [
     'images/Sweden/Volvo/S60/S60-3.jpg',
     'images/Sweden/Volvo/S60/S60-4.jpg'
   ],
-    related: [1,3, 4, 5]
+    related: [2,5, 8, 6]
 },
 {
   id: 8,
