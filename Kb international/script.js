@@ -125,7 +125,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 price: 28500,
                 mileage: '45,000 km',
                 transmission: 'Automatic',
-                image: 'images/Japan/Toyota/landcruiser/landcruiser.jpg'
+                image: 'images/Japan/Toyota/Landcruiser/landcruiser.jpg'
             },
             {
                 id: 2,
