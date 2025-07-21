@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KB International - Car Details</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    /* ===== Base Styles ===== */
+:root {
+  --primary: #0066cc;
+  --primary-dark: #0055aa;
+  --dark: #333333;
+  --light: #f8f8f8;
+  --gray: #e0e0e0;
+  --border: #dddddd;
+  --shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  --transition: all 0.3s ease;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: var(--dark);
+  background-color: var(--light);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ===== Layout Structure ===== */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+/* ===== Product Section ===== */
+/* ===== BASE REMAINS SAME (NO CHANGE NEEDED) ===== */
+/* ... Keep your existing root variables and base resets ... */
+
+/* ===== MAIN PRODUCT LAYOUT ADJUSTMENT ===== */
+.product-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  margin: 3rem auto;
+  align-items: start;
+  padding: 0 1rem;
+}
+
+.product-image {
+  width: 100%;
+}
+
+.product-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: var(--shadow);
+}
+
+.product-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.product-details h1 {
+  font-size: 2.25rem;
+  color: var(--primary);
+  margin-bottom: 0.5rem;
+}
+
+.product-details p {
+  font-size: 1.1rem;
+  color: var(--dark);
+}
+
+/* Price Highlight */
+#car-price {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--primary);
+  margin: 1.5rem 0 1rem 0;
+}
+
+/* Button */
+.cta-button {
+  padding: 0.9rem 2rem;
+  font-size: 1rem;
+  background-color: var(--primary);
+  border-radius: 6px;
+  margin-bottom: 2rem;
+}
+
+/* ===== THUMBNAILS ===== */
+.thumbnail-gallery {
+  margin-top: 2rem;
+}
+
+.thumbnails {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(75px, 1fr));
+  gap: 0.75rem;
+}
+
+.thumbnails img {
+  height: 70px;
+  border-radius: 5px;
+  object-fit: cover;
+  transition: var(--transition);
+  border: 2px solid transparent;
+}
+
+.thumbnails img:hover {
+  border-color: var(--primary);
+  transform: scale(1.05);
+}
+
+/* ===== RELATED CARS ===== */
+.related-cars {
+  margin: 4rem 0 2rem 0;
+}
+
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+/* ===== RESPONSIVE MEDIA QUERIES ===== */
+@media (max-width: 786px) {
+  .product-container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .product-details h1 {
+    font-size: 2rem;
+  }
+
+  #car-price {
+    font-size: 1.6rem;
+  }
+
+  .thumbnails {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 477px) {
+  .product-details h1 {
+    font-size: 1.6rem;
+  }
+
+  .product-details p {
+    font-size: 1rem;
+  }
+
+  #car-price {
+    font-size: 1.4rem;
+  }
+
+  .thumbnails {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .cta-button {
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 1rem;
+  }
+}
+
+</style>
+<body>
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <div class="logo-icon"><img src="images/kblogo.png" alt=""></div>
+                <div class="logo-text">
+                    KB<br>
+                    <span>INTERNATIONAL COMPANY</span>
+                </div>
+            </div>
+            <button class="nav-toggle" aria-label="Toggle navigation">☰
+            <span class="toggle-bar"></span>
+            <span class="toggle-bar"></span>
+            <span class="toggle-bar"></span>
+        </button>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="inventory.html">Inventory</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+     <!-- Dynamic Product Section -->
+  <main class="product-container">
+    <!-- Main Image (50% width) -->
+    <div class="product-image">
+      <img id="main-car-image" src="" alt="Car Image">
+    </div>
+
+    <!-- Product Details (50% width) -->
+    <div class="product-details">
+      <h1 id="car-make-model"></h1>
+      <p id="car-year"></p>
+      <p id="car-country"></p>
+      <p id="car-mileage"></p>
+      <p id="car-transmission"></p>
+      <p id="car-price"></p>
+      <button onclick="window.location.href='contact.html'" class="btn">Contact Dealer</button>
+
+      <!-- Thumbnail Gallery (4 images) -->
+      <div class="thumbnail-gallery">
+        <h3>More Images</h3>
+        <div class="thumbnails" id="car-thumbnails">
+          <!-- Thumbnails will be added by JavaScript -->
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Related Cars (4 cards) -->
+  <section class="related-cars">
+    <h3>You May Also Like</h3>
+    <div class="cards-container" id="related-cards">
+      <!-- Related cars will be inserted here -->
+    </div>
+  </section>
+
+ <!--Footer  -->
+  <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>KB International</h3>
+                    <p style="color: white;">Car Exporter</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <p style="color: white;">Email: kb.international.jp@gmail.com</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#inventory">Inventory</a></li>
+                        <li><a href="#services">Services</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>© 2023 KB International Company. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <a href="contact.html" class="contact-icon" title="Contact Us">
+  <img src="https://cdn-icons-png.flaticon.com/512/561/561127.png" alt="Contact" />
+</a>
+
+<script src="product.js"></script>
+
+</body>
+</html>

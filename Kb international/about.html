@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="styles.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"  />
+</head>
+<style>
+   .milestone-section {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 4rem 1rem;
+  background: linear-gradient(to right, #e0f7fa, #fff);
+}
+
+.milestone-card {
+  flex: 1 1 250px;
+  background: rgba(255, 255, 255, 0.75);
+  border-radius: 20px;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  transition: transform 0.3s ease;
+}
+
+.milestone-card:hover {
+  transform: translateY(-10px) scale(1.03);
+}
+
+.milestone-card img {
+  width: 60px;
+  margin-bottom: 1rem;
+}
+
+.milestone-card h2 {
+  font-size: 2.5rem;
+  color: #0066cc;
+  font-weight: 700;
+  margin: 0.5rem 0;
+}
+
+.milestone-card p {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #222;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .milestone-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .milestone-card {
+    width: 90%;
+  }
+}
+
+</style>
+<body>
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <div class="logo-icon"><img src="images/kblogo.png" alt=""></div>
+                <div class="logo-text">
+                    KB<br>
+                    <span>INTERNATIONAL COMPANY</span>
+                </div>
+            </div>
+            <button class="nav-toggle" aria-label="Toggle navigation">☰
+            <span class="toggle-bar"></span>
+            <span class="toggle-bar"></span>
+            <span class="toggle-bar"></span>
+        </button>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="inventory.html">Inventory</a></li>
+                    <li><a class="active" href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section  id="about-header" >
+    <h2>We love to share it all.</h2>
+    <!-- <p></p> -->
+  </section>
+
+<section id="contact-details" class="section-p1">
+    <div class="details">
+        <span>GET IN TOUCH</span>
+        <h2>Visit our location or contact us today</h2>
+        <h3>Head Office</h3>
+        <div>
+            <li>
+                <i class="fa-regular fa-map"></i>
+                <p>1-89-2 HIGASHISUERO YATOMI-SHI, AICHI-KEN,JAPAN</p>
+            </li>
+            <li>
+                <i class="fa-regular fa-envelope"></i>
+                <p>Email: kb.international.jp@gmail.com</p>
+            </li>
+            <li>
+                <i class="fa-solid fa-phone"></i>
+<p>052-325-3461 / 090-2346-1986</p>   
+         </li>
+            <li>
+                <i class="fa-regular fa-clock"></i>
+                <p>08:00 - 20:00, Mon - Sat</p>
+            </li>
+        </div>
+    </div>
+    <div class="map">
+       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1674580.5404381587!2d134.12940660223197!3d34.93993477411755!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60039cacf528eb21%3A0xd401942cf8af9cf9!2sYatomi%2C%20Aichi%2C%20Japan!5e0!3m2!1sen!2s!4v1752193887291!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>    </div>
+</section>
+
+<section class="services" id="services">
+        <div class="container">
+            <h2 class="section-title">Our Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">🚢</div>
+                    <h3>Worldwide Shipping</h3>
+                    <p>We handle all logistics to deliver your vehicle anywhere in the world</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🔍</div>
+                    <h3>Quality Inspection</h3>
+                    <p>Every vehicle undergoes rigorous 150-point inspection</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">💵</div>
+                    <h3>Competitive Pricing</h3>
+                    <p>Direct from Japan means better prices for you</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<section class="milestone-section">
+  <div class="milestone-card">
+    <img src="https://cdn-icons-png.flaticon.com/512/743/743009.png" alt="Dealership Icon" />
+    <h2><span class="counter" data-target="1000">0</span>+</h2>
+    <p>Dealerships</p>
+  </div>
+  <div class="milestone-card">
+    <img src="https://cdn-icons-png.flaticon.com/512/847/847969.png" alt="Clients Icon" />
+    <h2><span class="counter" data-target="400">0</span>+</h2>
+    <p>Happy Clients</p>
+  </div>
+  <div class="milestone-card">
+    <img src="https://cdn-icons-png.flaticon.com/512/743/743007.png" alt="Car Icon" width="60" />
+
+    <h2><span class="counter" data-target="150">0</span>+</h2>
+    <p>Cars Sold</p>
+  </div>
+</section>
+
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>KB International</h3>
+                    <p style="color: white;">Japanese Car Exporter</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <p style="color: white;">Email: kb.international.jp@gmail.com</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#inventory">Inventory</a></li>
+                        <li><a href="#services">Services</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p style="color: white;">© 2023 KB International Company. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <a href="contact.html" class="contact-icon" title="Contact Us">
+  <img src="https://cdn-icons-png.flaticon.com/512/561/561127.png" alt="Contact" />
+</a>
+
+    <script src="script.js"></script>
+   <script>
+  const counters = document.querySelectorAll('.counter');
+  const speed = 100;
+
+  counters.forEach(counter => {
+    const updateCount = () => {
+      const target = +counter.getAttribute('data-target');
+      const count = +counter.innerText;
+      const increment = Math.ceil(target / speed);
+
+      if (count < target) {
+        counter.innerText = count + increment;
+        setTimeout(updateCount, 20);
+      } else {
+        counter.innerText = target;
+      }
+    };
+
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          updateCount();
+          observer.unobserve(counter);
+        }
+      });
+    }, { threshold: 0.7 });
+
+    observer.observe(counter);
+  });
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Inventory</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+     <header>
+        <div class="container header-container">
+            <div class="logo">
+                <div class="logo-icon"><img src="images/kblogo.png" alt=""></div>
+                <div class="logo-text">
+                    KB<br>
+                    <span>INTERNATIONAL COMPANY</span>
+                </div>
+            </div>
+            <button class="nav-toggle" aria-label="Toggle navigation">☰
+            <span class="toggle-bar"></span>
+            <span class="toggle-bar"></span>
+            <span class="toggle-bar"></span>
+        </button>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a class="active" href="inventory.html">Inventory</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section id="page-header">
+  </section>
+<!-- Inventory -->
+<section class="vehicles" id="inventory">
+        <div class="container">
+            <h2 class="section-title">Main Inventory</h2>
+           <div class="select-container filters">
+    <select id="country-filter">
+        <!-- Options will be populated by JavaScript -->
+    </select>
+    <select id="make-filter">
+        <!-- Options will be populated by JavaScript -->
+    </select>
+    <select id="model-filter" disabled>
+    <option value="">Select Make First</option>
+</select>
+    <select id="price-filter">
+        <option value="">Any Price</option>
+        <option value="10000">Under $10,000</option>
+        <option value="20000">Under $20,000</option>
+        <option value="30000">Under $30,000</option>
+        <option value="50000">Under $50,000</option>
+        <option value="100000">Under $100,000</option>
+    </select>
+    <!-- <label>
+        <input type="checkbox" id="marked-only"> Show only marked makes
+    </label> -->
+</div>
+<div class="vehicle-grid"></div>
+        </div>
+     <div class="inventory-button-container">
+   <button onclick="window.location.href='contact.html'" class="btn">Contact Dealer</button>
+</div>
+    </section>
+
+   <!--Footer  -->
+  <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>KB International</h3>
+                    <p>Car Exporter</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <p>Email: kb.international.jp@gmail.com</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#inventory">Inventory</a></li>
+                        <li><a href="#services">Services</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>© 2023 KB International Company. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <a href="contact.html" class="contact-icon" title="Contact Us">
+  <img src="https://cdn-icons-png.flaticon.com/512/561/561127.png" alt="Contact" />
+</a>
+
+    <script src="inventory.js"></script>
+</body>
+</html>

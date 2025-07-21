@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact us</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+/* Form Container */
+form {
+    max-width: 600px;
+    margin: 100px auto 50px;
+    padding: 30px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Input Fields */
+form input[type="text"],
+form input[type="email"],
+form input[type="tel"],
+form textarea {
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    display: block;
+}
+
+/* Input Focus States */
+form input[type="text"]:focus,
+form input[type="email"]:focus,
+form textarea:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+}
+
+/* Textarea Specific Styles */
+form textarea {
+    min-height: 150px;
+    resize: vertical;
+    font-family: inherit;
+}
+
+/* Submit Button */
+form button[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Button Hover Effect */
+form button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Form Labels (if you add them later) */
+form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #333;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    form {
+        margin-top: 80px;
+        padding: 25px;
+    }
+}
+
+@media (max-width: 480px) {
+    form {
+        margin-top: 70px;
+        padding: 20px;
+    }
+    
+    form input[type="text"],
+    form input[type="email"],
+    form textarea {
+        padding: 10px 12px;
+        font-size: 15px;
+    }
+    
+    form button[type="submit"] {
+        padding: 10px 15px;
+        font-size: 15px;
+    }
+}
+</style>
+<body>
+  <header>
+        <div class="container header-container">
+            <div class="logo">
+                <div class="logo-icon"><img src="images/kblogo.png" alt=""></div>
+                <div class="logo-text">
+                    KB<br>
+                    <span>INTERNATIONAL COMPANY</span>
+                </div>
+            </div>
+            <button class="nav-toggle" aria-label="Toggle navigation">☰
+            <span class="toggle-bar"></span>
+            <span class="toggle-bar"></span>
+            <span class="toggle-bar"></span>
+        </button>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="inventory.html">Inventory</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a class="active" href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+<!-- Contact form Submission -->
+
+<form action="https://api.web3forms.com/submit" method="POST">
+
+    <!-- Replace with your Access Key -->
+    <input type="hidden" name="access_key" value="a076236e-8d99-48c0-904f-cbfe334023ee">
+<h2 class="section-title">Contact Dealer</h2>
+    <!-- Form Inputs. Each input must have a name="" attribute -->
+     <span>Your name</span>
+    <input type="text" name="name" required>
+    <span>Email</span>
+    <input type="email" name="email" required> 
+    <label for="phone">Phone Number</label>
+    <input type="tel" id="phone" name="phone" required ><br>
+    <span>Country</span>
+    <input type="text" name="country" required>
+    <span>Your message</span>
+    <textarea name="message" required></textarea>
+<button type="submit" >Submit Form</button>
+</form>
+
+
+
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>KB International</h3>
+                    <p style="color: white;">Car Exporter</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <p style="color: white;">Email: kb.international.jp@gmail.com</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#inventory">Inventory</a></li>
+                        <li><a href="about.html">About</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p style="color: white;">© 2023 KB International Company. All rights reserved.</p>
+            </div>
+        </div>
+    </footer> 
+    <script src="script.js"></script> 
+</body>
+</html>
